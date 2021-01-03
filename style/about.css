@@ -1,5 +1,55 @@
 #about {
-    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
     width: 100vw;
-    background-color: yellow;
+    padding: 3vh 0 0 0;
+    background-color: #92cece;
+}
+
+#about h1 {
+    font-size: 44px;
+    font-weight: bold;
+}
+#aboutWrapper {
+    display: flex;
+    flex-direction: row;
+}
+#about img {
+    height: 70vh;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+#aboutText {
+    width: 60vw;
+    /* height: 80vh; */
+    font-size: 22px;
+    z-index: 2;
+    text-align: justify;
+}
+
+@media screen and (max-width:1024px) {
+    #aboutText {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #aboutText {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:720px) {
+    #aboutText {
+        width: 90vw;
+    }
+
+    #about img {
+        height: 50%;
+    }
 }
