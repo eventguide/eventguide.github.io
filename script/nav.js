@@ -30,6 +30,7 @@ window.addEventListener('load', () => {
     const nav = document.querySelector('nav');
     const homeNav = document.getElementById('homeNav');
     const aboutNav = document.getElementById('aboutNav');
+    const goToAbout = document.getElementById('goToAbout');
     const blogNav = document.getElementById('blogNav');
     const contactNav = document.getElementById('contactNav');
 
@@ -54,6 +55,22 @@ window.addEventListener('load', () => {
         if(document.body.offsetWidth <= "768") {
             navbarToggle();
         }
+        if(window.scrollY > 0) {
+            window.scrollTo({
+                top: homeSection.clientHeight + 1,
+                left: 0,
+                behavior: 'smooth'
+            })
+        } else {
+            window.scrollTo({
+                top: homeSection.clientHeight + 1,
+                left: 0,
+                behavior: 'smooth'
+            })
+        }  
+    })
+
+    goToAbout.addEventListener('click', () => {
         if(window.scrollY > 0) {
             window.scrollTo({
                 top: homeSection.clientHeight + 1,
