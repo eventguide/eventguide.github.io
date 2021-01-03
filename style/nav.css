@@ -108,11 +108,11 @@ nav ul li:hover {
     .nav-links p {
         display: flex;
         width: 70vw;
-        padding: 30vh 0 0 0;
+        padding: 30vh 0 5vh 0;
         font-size: 15px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: end;
+        align-items: flex-end;
     }
 
     .burger {
