@@ -20,25 +20,53 @@
     display: flex;
     width: 100vw;
     height: 90vh;
-    background-image: url("../img/pexels-wendy-wei-1190298.jpg");
+    background-image: url("../img/homeBackground.jpg");
     background-size: cover;
     filter: blur(7px);
     position: absolute;
 }
 
-#home h1 {
+#homeText h1 {
     font-size: 66px;
     font-weight: bold;
+    margin: 0;
 }
-#home p {
+#homeText p {
     width: 50vw;
     font-size: 16px;
+    margin: 20px 0;
 }
 
 #home button {
     width: 30vw;
     height: 8vh;
     font-size: 44px;
+}
+
+/* #buttonwrapper {
+    width: 60%;
+    margin: 2vh 0;
+    padding: 0vh 1.5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+/* Farbe ändert sich */
+#goToAbout {
+    padding: .75vw;
+    border: solid #486491 2px;
+    border-radius: 50px;
+    background: transparent;
+    outline: none;
+    color:#486491;
+    cursor: pointer;
+    transition: 300ms background ease-in-out, 300ms color ease-in-out;
+}
+
+#goToAbout:hover {
+    background: #486491;
+    color: #ffffff;
 }
 
 #homeText {
@@ -50,6 +78,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
     /* background-color: gray; */
     opacity: .9;
