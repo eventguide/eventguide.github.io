@@ -37,12 +37,10 @@
     margin: 20px 0;
 }
 
-#home button {
+#goToAbout {
     width: 30vw;
     height: 8vh;
     font-size: 44px;
-}
-#goToAbout {
     padding: .75vw;
     border: solid #486491 2px;
     border-radius: 50px;
@@ -78,22 +76,22 @@
 }
 
 @media screen and (max-width:1024px) {
-    #home button {
+    #goToAbout {
         width: 60%;
         font-size: 30px;
     }
 }
 
 @media screen and (max-width:768px) {
-    #home button {
+    #goToAbout {
         width: 70%;
         font-size: 30px;
+        background-color: #486491;
     }
 }
 
 @media screen and (max-width:720px) {
-    #home button {
-        width: 70%;
+    #goToAbout {
         font-size: 20px;
     }
 }
