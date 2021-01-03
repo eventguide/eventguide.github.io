@@ -87,6 +87,7 @@ nav ul li:hover {
         width: 100vw;
         height: 90vh;
         top: 10vh;
+        /* background: rgba(220,160,140,0.8); */
         background-color: #485b6e;
         color: white;
         display: flex;
@@ -97,6 +98,7 @@ nav ul li:hover {
         justify-content: flex-start;
         margin: 0px;
         padding: 10vh 0 0 0;
+        opacity: .9;
     }
 
     .nav-links li {

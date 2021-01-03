@@ -1,23 +1,102 @@
 window.addEventListener('load', () => {
-    // Navigation 
-    const navSlide = () => {
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('.nav-links');
-        const navLinks = document.querySelectorAll('.nav-links li');
-        
-        burger.addEventListener('click', () => {
-            nav.classList.toggle('nav-active');
+    // responible navbar
+    const burger = document.querySelector('.burger');
+    const navbar = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
 
-            navLinks.forEach((link, index)=> {
-                if (link.style.animation) {
-                    link.style.animation = '';
-                } else {
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`;
-                }
-            })
-            burger.classList.toggle('toggle');
+    const navSlide = () => {        
+        burger.addEventListener('click', () => {
+            navbarToggle();
         })
     }
 
     navSlide();
+
+    function navbarToggle() {
+        navbar.classList.toggle('nav-active');
+    
+        navLinks.forEach((link, index)=> {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+            }
+        })
+        burger.classList.toggle('toggle');
+    }
+
+
+    // slider
+    const nav = document.querySelector('nav');
+    const homeNav = document.getElementById('homeNav');
+    const aboutNav = document.getElementById('aboutNav');
+    const blogNav = document.getElementById('blogNav');
+    const contactNav = document.getElementById('contactNav');
+
+    const homeSection = document.getElementById('home');
+    const aboutSection = document.getElementById('about');
+    const blogSection = document.getElementById('blog');
+    const contactSection = document.getElementById('contact');
+
+    homeNav.addEventListener('click', () => {
+        navbarToggle();
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    });
+
+
+    aboutNav.addEventListener('click', () => {
+        navbarToggle();
+        if(window.scrollY > 0) {
+            window.scrollTo({
+                top: homeSection.clientHeight + 1,
+                left: 0,
+                behavior: 'smooth'
+            })
+        } else {
+            window.scrollTo({
+                top: homeSection.clientHeight + 1,
+                left: 0,
+                behavior: 'smooth'
+            })
+        }  
+    })
+
+    blogNav.addEventListener('click', () => {
+        navbarToggle();
+        if (window.scrollY > 0) {
+            window.scrollTo({
+                top: homeSection.clientHeight + aboutSection.clientHeight + 1,
+                left: 0,
+                behavior: 'smooth'
+            })
+        } else {
+            window.scrollTo({
+                top: homeSection.clientHeight + aboutSection.clientHeight + 1,
+                left: 0,
+                behavior: 'smooth'
+            })
+        }
+    })
+
+    contactNav.addEventListener('click', () => {
+        navbarToggle();
+        if (window.scrollY > 0) {
+            window.scrollTo({
+                top: homeSection.clientHeight + aboutSection.clientHeight + blogSection.clientHeight + 1,
+                left: 0,
+                behavior: 'smooth'
+            })
+        } else {
+            window.scrollTo({
+                top: homeSection.clientHeight + aboutSection.clientHeight + blogSection.clientHeight + 1,
+                left: 0,
+                behavior: 'smooth'
+            })
+        } 
+    })
+
 })
