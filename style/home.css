@@ -31,9 +31,10 @@
     font-weight: bold;
     margin: 0;
 }
+
 #homeText p {
     width: 50vw;
-    font-size: 16px;
+    font-size: 24px;
     margin: 20px 0;
 }
 
@@ -80,6 +81,10 @@
         width: 60%;
         font-size: 30px;
     }
+
+    #homeText p {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -88,10 +93,26 @@
         font-size: 30px;
         background-color: #486491;
     }
+
+    #homeText {
+        width: 70vw;
+    }
+
+    #homeText p {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width:720px) {
     #goToAbout {
         font-size: 20px;
+    }
+
+    #homeText {
+        width: 80vw;
+    }
+
+    #homeText p {
+        font-size: 16px;
     }
 }
