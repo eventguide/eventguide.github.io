@@ -5,7 +5,7 @@
     flex-direction: column;
     min-height: 90vh;
     width: 100vw;
-    padding: 3vh 0 0 0;
+    /* padding: 3vh 0 0 0; */
     background-color: #92cece;
 }
 
@@ -16,12 +16,6 @@
 #aboutWrapper {
     display: flex;
     flex-direction: row;
-}
-#about img {
-    height: 70vh;
-    position: absolute;
-    opacity: 0.5;
-    z-index: 1;
 }
 
 #aboutText {
@@ -47,9 +41,5 @@
 @media screen and (max-width:720px) {
     #aboutText {
         width: 90vw;
-    }
-
-    #about img {
-        height: 40%;
     }
 }

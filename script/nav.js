@@ -36,6 +36,7 @@ window.addEventListener('load', () => {
 
     const homeSection = document.getElementById('home');
     const aboutSection = document.getElementById('about');
+    const logoParallaxSection = document.getElementById('logoParallax');
     const blogSection = document.getElementById('blog');
     const contactSection = document.getElementById('contact');
 
@@ -92,13 +93,13 @@ window.addEventListener('load', () => {
         }
         if (window.scrollY > 0) {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight + 1,
+                top: homeSection.clientHeight + aboutSection.clientHeight + logoParallaxSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })
         } else {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight + 1,
+                top: homeSection.clientHeight + aboutSection.clientHeight + logoParallaxSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })
@@ -111,13 +112,13 @@ window.addEventListener('load', () => {
         }
         if (window.scrollY > 0) {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight + blogSection.clientHeight + 1,
+                top: homeSection.clientHeight + aboutSection.clientHeight + logoParallaxSection.clientHeight + blogSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })
         } else {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight + blogSection.clientHeight + 1,
+                top: homeSection.clientHeight + aboutSection.clientHeight + logoParallaxSection.clientHeight + blogSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })

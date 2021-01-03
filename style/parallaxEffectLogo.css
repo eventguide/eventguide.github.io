@@ -1,0 +1,10 @@
+#logoParallax {
+    background-image: url(../img/parallaxLogo.png);
+    height: 50vh;
+
+
+    background-attachment: fixed;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
