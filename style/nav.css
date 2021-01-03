@@ -12,7 +12,7 @@ nav {
     font-size: 125%;
     top: 0;
     left: 0;
-    position: fixed;
+    /* position: fixed; */
     background-color: #485b6e;
     transition: .5s ease-in-out;
     opacity: 1;
