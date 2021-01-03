@@ -39,7 +39,9 @@ window.addEventListener('load', () => {
     const contactSection = document.getElementById('contact');
 
     homeNav.addEventListener('click', () => {
-        navbarToggle();
+        if(document.body.offsetWidth <= "768") {
+            navbarToggle();
+        }
         window.scrollTo({
             top: 0,
             left: 0,
@@ -49,7 +51,9 @@ window.addEventListener('load', () => {
 
 
     aboutNav.addEventListener('click', () => {
-        navbarToggle();
+        if(document.body.offsetWidth <= "768") {
+            navbarToggle();
+        }
         if(window.scrollY > 0) {
             window.scrollTo({
                 top: homeSection.clientHeight + 1,
@@ -66,7 +70,9 @@ window.addEventListener('load', () => {
     })
 
     blogNav.addEventListener('click', () => {
-        navbarToggle();
+        if(document.body.offsetWidth <= "768") {
+            navbarToggle();
+        }
         if (window.scrollY > 0) {
             window.scrollTo({
                 top: homeSection.clientHeight + aboutSection.clientHeight + 1,
@@ -83,7 +89,9 @@ window.addEventListener('load', () => {
     })
 
     contactNav.addEventListener('click', () => {
-        navbarToggle();
+        if(document.body.offsetWidth <= "768") {
+            navbarToggle();
+        }
         if (window.scrollY > 0) {
             window.scrollTo({
                 top: homeSection.clientHeight + aboutSection.clientHeight + blogSection.clientHeight + 1,
