@@ -1,0 +1,22 @@
+footer {
+    width: 100vw;
+    min-height: 30vh;
+    background-color: #152836;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+}
+
+footer .icons {
+    width: 20vw;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    
+}
