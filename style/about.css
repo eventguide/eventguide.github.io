@@ -76,6 +76,7 @@
 @media screen and (max-width:720px) {
     #aboutText {
         width: 90vw;
+        text-align: left;
     }
 
     #aboutContact {
