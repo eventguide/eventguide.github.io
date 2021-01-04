@@ -24,9 +24,9 @@ a {
 i {
     font-size: 50px;
     color: white;
-    border: 1px solid #ffffff;
-    border-radius: 100px;
-    padding: 8px;
+    /* border: 1px solid #ffffff;
+    border-radius: 100px; */
+    /* padding: 8px; */
     transition: all 1s ease;
     cursor: pointer;
 }
