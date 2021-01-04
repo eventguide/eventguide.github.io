@@ -18,5 +18,32 @@ footer .icons {
     justify-content: space-around;
     align-items: center;
     margin: 20px;
-    
+}
+
+footer p {
+    width: 80vw;
+    font-size: 22px;
+    text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+    footer .icons {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer .icons {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width:720px) {
+    footer .icons {
+        width: 70vw;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
 }
