@@ -1,5 +1,27 @@
 #contact {
-    height: 90vh;
+    min-height: 90vh;
     width: 100vw;
     background-color: turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact img {
+    height: 50vh;
+}
+
+#contact h1 {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+#contact #contactWrapper {
+    width: 40vw;
+    /* height: 70vh; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

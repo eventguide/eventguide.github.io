@@ -26,6 +26,23 @@
     position: absolute;
 }
 
+#homeText {
+    width: 60vw;
+    height: 50vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    opacity: .9;
+    border: 3px solid #f1f1f1;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4);
+    /* box-shadow: rgba(0, 0, 0, .7) 5px 10px 25px 0px; */
+}
+
 #homeText h1 {
     font-size: 66px;
     font-weight: bold;
@@ -55,25 +72,6 @@
 #goToAbout:hover {
     background: #486491;
     color: #ffffff;
-}
-
-#homeText {
-    width: 60vw;
-    height: 50vh;
-    top: -0vh;
-    /* position: absolute; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    /* background-color: gray; */
-    opacity: .9;
-    border: 3px solid #f1f1f1;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.4);
-    /* box-shadow: rgba(0, 0, 0, .7) 5px 10px 25px 0px; */
 }
 
 @media screen and (max-width:1024px) {
