@@ -1,5 +1,11 @@
 #blog {
     height: 90vh;
     width: 100vw;
-    background-color: violet;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog h1 {
+    font-size: 66px;
 }
