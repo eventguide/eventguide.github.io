@@ -57,16 +57,28 @@
     #aboutText {
         width: 70vw;
     }
+
+    #aboutContact {
+        width: 50vw;
+    }
 }
 
 @media screen and (max-width:768px) {
     #aboutText {
         width: 80vw;
     }
+
+    #aboutContact {
+        width: 60vw;
+    }
 }
 
 @media screen and (max-width:720px) {
     #aboutText {
         width: 90vw;
+    }
+
+    #aboutContact {
+        width: 75vw;
     }
 }

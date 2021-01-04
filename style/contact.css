@@ -25,3 +25,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width:720px) {
+    #contactWrapper img {
+        height: 40vh;
+    }
+}
