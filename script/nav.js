@@ -31,6 +31,7 @@ window.addEventListener('load', () => {
     const homeNav = document.getElementById('homeNav');
     const aboutNav = document.getElementById('aboutNav');
     const goToAbout = document.getElementById('goToAbout');
+    const goToHome = document.getElementById('goToHome');
     // const blogNav = document.getElementById('blogNav');
     const contactNav = document.getElementById('contactNav');
 
@@ -85,6 +86,14 @@ window.addEventListener('load', () => {
                 behavior: 'smooth'
             })
         }  
+    })
+
+    goToHome.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
     })
 
     // blogNav.addEventListener('click', () => {

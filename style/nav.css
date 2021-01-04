@@ -66,6 +66,10 @@ nav ul li:hover {
     transition: all 1s ease;
 }
 
+#goToHome {
+    cursor: pointer;
+}
+
 
 @media screen and (max-width:1024px) {
     .nav-links {
