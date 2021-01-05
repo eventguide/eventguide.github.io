@@ -16,6 +16,11 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-size: 44px;
+    font-weight: bold;
+}
+
 a {
     text-decoration: none;
     color: #ffffff;
@@ -24,14 +29,7 @@ a {
 i {
     font-size: 50px;
     color: white;
-    /* border: 1px solid #ffffff;
-    border-radius: 100px; */
-    /* padding: 8px; */
     transition: all 1s ease;
     cursor: pointer;
-}
-
-i:hover {
-    color: black;
-    background-color: #ffffff;
+    background-color: transparent;
 }

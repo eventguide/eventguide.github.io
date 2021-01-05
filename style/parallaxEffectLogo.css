@@ -2,7 +2,6 @@
     background-image: url(../img/parallaxLogo.png);
     height: 60vh;
 
-
     background-attachment: fixed;
     background-position: fixed;
     background-repeat: no-repeat;
@@ -12,25 +11,11 @@
 @media screen and (max-width:1024px) {
     #logoParallax {
         background-image: url(../img/parallaxLogo_1024.png);
-        height: 60vh;
-    
-    
-        background-attachment: fixed;
-        background-position: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }
 
 @media screen and (max-width:720px) {
     #logoParallax {
         background-image: url(../img/Event_Guide_Logo_Hochformat2.png);
-        height: 60vh;
-    
-    
-        background-attachment: fixed;
-        background-position: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }

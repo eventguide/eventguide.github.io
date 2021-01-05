@@ -12,10 +12,6 @@
     color: blue;
 }
 
-#about h1 {
-    font-size: 44px;
-    font-weight: bold;
-}
 #aboutWrapper {
     display: flex;
     flex-direction: row;
@@ -42,12 +38,9 @@
 }
 
 #aboutContact i {
-    border: none;
     color: #000000;
-    background-color: transparent;
 }
 #aboutContact i:hover {
-    border: none;
     color: #ffffff;
 }
 

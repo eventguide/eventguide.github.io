@@ -12,22 +12,56 @@
     height: 50vh;
 }
 
-#contact h1 {
-    font-size: 44px;
-    font-weight: bold;
+#contactReception {
+    width: 40vw;
+    font-size: 26px;
+    border: 2px solid #232531;
+    padding: 20px;
+    border-radius: 25px;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contactReception i {
+    color: #000000;
+}
+#contactReception i:hover {
+    color: #ffffff;
 }
 
 #contact #contactWrapper {
     width: 40vw;
-    /* height: 70vh; */
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+@media screen and (max-width:1024px) {
+    #contactReception {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #aboutText {
+        width: 80vw;
+    }
+
+    #contactReception {
+        width: 70vw;
+    }
+}
+
 @media screen and (max-width:720px) {
     #contactWrapper img {
         height: 40vh;
+    }
+
+    #contactReception {
+        width: 75vw;
     }
 }
