@@ -47,6 +47,17 @@ footer i:hover {
     footer .icons {
         width: 40vw;
     }
+
+    footer i {
+        border: none;
+        border-radius: 0;
+        padding: 5px;
+    }
+
+    footer i:hover {
+        color: #ffffff;
+        background-color: transparent;
+    }
 }
 
 @media screen and (max-width:720px) {
