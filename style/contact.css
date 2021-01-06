@@ -109,6 +109,16 @@ form #submitBtn {
     cursor: pointer;
 }
 
+form #acceptSettings {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+form #checkbox {
+    width: 20px;
+    height: 20px;
+}
+
 @media screen and (max-width:1024px) {
     #contactReception {
         width: 60vw;
