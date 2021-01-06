@@ -139,16 +139,17 @@
             <img src="img/Event_Guide_Logo_05_BIG-min.png" alt="">
         </div>
 
-        <form action="contactUs">
+        <form action="script/contactform.php" method="POST">
             <div id="personalName">
-                <input type="text" placeholder="Vorname">
-                <input type="text" placeholder="Nachname">
+                <input type="text" name="firstName" class="inputField" placeholder="Vorname">
+                <input type="text" name="surname" class="inputField" placeholder="Nachname">
             </div>
-            <input type="email" placeholder="E-mail Adresse">
-            <input type="text" placeholder="Betreff" autocomplete="off">
-            <textarea name="messagebox" id="formMessage" placeholder="Deine Nachricht" rows="8" maxlength="4000" spellcheck="false"></textarea>
+            <input type="email" name="email" class="inputField" placeholder="E-mail Adresse">
+            <input type="text" name="subject" class="inputField" placeholder="Betreff" autocomplete="off">
+            <textarea name="message" id="formMessage" placeholder="Deine Nachricht" rows="8" maxlength="4000" spellcheck="false"></textarea>
+            <input type="submit" name="submit" id="submitBtn">
         </form>
-        
+
     </section>
 
     <!-- Footer -->

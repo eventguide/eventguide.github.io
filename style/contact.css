@@ -55,7 +55,7 @@ form #personalName {
     justify-content: space-between;
 }
 
-form input {
+.inputField {
     outline: none;
     border: none;
     background: none;
@@ -72,7 +72,7 @@ form input {
     border-radius: 5px;
 }
 
-form input:focus {
+.inputField:focus {
     border-bottom:#166ba2 3px solid;
 }
 
@@ -99,6 +99,14 @@ form textarea {
 
 form textarea:focus {
     border-bottom:#166ba2 3px solid;
+}
+
+form #submitBtn {
+    background-color: #166ba2;
+    font-size: 26px;
+    padding: 10px 0;
+    margin: 0 0 50px 0;
+    cursor: pointer;
 }
 
 @media screen and (max-width:1024px) {
