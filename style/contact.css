@@ -1,7 +1,9 @@
 #contact {
     min-height: 90vh;
     width: 100vw;
-    background-color: turquoise;
+    /* background-color: turquoise; */
+    /* background-color: #e7ecf3; */
+    background-color: #76c3bd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +40,65 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    /* height: 60vh; */
+}
+
+form #personalName {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input {
+    outline: none;
+    border: none;
+    background: none;
+
+    height: 4vh;
+    font-size: 16px;
+    margin: 20px 0;
+    padding: 5px;
+
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, .4) 2px 5px 7px 0px;
+    border-bottom: lightgray 3px solid;
+    transition: border-bottom 500ms ease;
+    border-radius: 5px;
+}
+
+form input:focus {
+    border-bottom:#166ba2 3px solid;
+}
+
+form #personalName input {
+    width: 45%;
+}
+
+form textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    background: none;
+
+    font-size: 16px;
+    margin: 20px 0;
+    padding: 5px;
+
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, .2) 2px 5px 7px 0px;
+    border-bottom: lightgray 3px solid;
+    transition: border-bottom 500ms ease;
+    border-radius: 5px;
+}
+
+form textarea:focus {
+    border-bottom:#166ba2 3px solid;
 }
 
 @media screen and (max-width:1024px) {
