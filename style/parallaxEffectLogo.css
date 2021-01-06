@@ -10,12 +10,12 @@
 
 @media screen and (max-width:1024px) {
     #logoParallax {
-        background-image: url(../img/parallaxLogo_1024.png);
+        background-image: url(../img/parallaxLogo_laptop.png);
     }
 }
 
 @media screen and (max-width:720px) {
     #logoParallax {
-        background-image: url(../img/Event_Guide_Logo_Hochformat2.png);
+        background-image: url(../img/parallaxLogo_mobile.png);
     }
 }
