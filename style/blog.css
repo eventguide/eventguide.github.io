@@ -26,3 +26,29 @@
     font-size: 22px;
     filter: blur(3.8px);
 }
+
+@media screen and (max-width:1024px) {
+    #blog img {
+        height: 50vh;
+    }
+
+    #blog p {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #blog p {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:720px) {
+    #blog img {
+        height: 20vh;
+    }
+
+    #blog p {
+        width: 90vw;
+    }
+}
