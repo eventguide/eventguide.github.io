@@ -32,13 +32,13 @@ window.addEventListener('load', () => {
     const aboutNav = document.getElementById('aboutNav');
     const goToAbout = document.getElementById('goToAbout');
     const goToHome = document.getElementById('goToHome');
-    // const blogNav = document.getElementById('blogNav');
+    const blogNav = document.getElementById('blogNav');
     const contactNav = document.getElementById('contactNav');
 
     const homeSection = document.getElementById('home');
     const aboutSection = document.getElementById('about');
     const logoParallaxSection = document.getElementById('logoParallax');
-    // const blogSection = document.getElementById('blog');
+    const blogSection = document.getElementById('blog');
     const contactSection = document.getElementById('contact');
 
     homeNav.addEventListener('click', () => {
@@ -51,6 +51,25 @@ window.addEventListener('load', () => {
             behavior: 'smooth'
         });
     });
+    
+    blogNav.addEventListener('click', () => {
+        if(document.body.offsetWidth <= "768") {
+            navbarToggle();
+        }
+        if (window.scrollY > 0) {
+            window.scrollTo({
+                top: homeSection.clientHeight+ 1,
+                left: 0,
+                behavior: 'smooth'
+            })
+        } else {
+            window.scrollTo({
+                top: homeSection.clientHeight + 1,
+                left: 0,
+                behavior: 'smooth'
+            })
+        }
+    })
 
 
     aboutNav.addEventListener('click', () => {
@@ -59,13 +78,13 @@ window.addEventListener('load', () => {
         }
         if(window.scrollY > 0) {
             window.scrollTo({
-                top: homeSection.clientHeight + 1,
+                top: homeSection.clientHeight + blogSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })
         } else {
             window.scrollTo({
-                top: homeSection.clientHeight + 1,
+                top: homeSection.clientHeight + blogSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })
@@ -75,13 +94,13 @@ window.addEventListener('load', () => {
     goToAbout.addEventListener('click', () => {
         if(window.scrollY > 0) {
             window.scrollTo({
-                top: homeSection.clientHeight + 1,
+                top: homeSection.clientHeight + blogSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })
         } else {
             window.scrollTo({
-                top: homeSection.clientHeight + 1,
+                top: homeSection.clientHeight + blogSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })
@@ -96,38 +115,19 @@ window.addEventListener('load', () => {
         });
     })
 
-    // blogNav.addEventListener('click', () => {
-    //     if(document.body.offsetWidth <= "768") {
-    //         navbarToggle();
-    //     }
-    //     if (window.scrollY > 0) {
-    //         window.scrollTo({
-    //             top: homeSection.clientHeight + aboutSection.clientHeight + logoParallaxSection.clientHeight + 1,
-    //             left: 0,
-    //             behavior: 'smooth'
-    //         })
-    //     } else {
-    //         window.scrollTo({
-    //             top: homeSection.clientHeight + aboutSection.clientHeight + logoParallaxSection.clientHeight + 1,
-    //             left: 0,
-    //             behavior: 'smooth'
-    //         })
-    //     }
-    // })
-
     contactNav.addEventListener('click', () => {
         if(document.body.offsetWidth <= "768") {
             navbarToggle();
         }
         if (window.scrollY > 0) {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight + logoParallaxSection.clientHeight + 1,
+                top: homeSection.clientHeight + blogSection.clientHeight + aboutSection.clientHeight + logoParallaxSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })
         } else {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight + logoParallaxSection.clientHeight + 1,
+                top: homeSection.clientHeight + blogSection.clientHeight + aboutSection.clientHeight + logoParallaxSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })

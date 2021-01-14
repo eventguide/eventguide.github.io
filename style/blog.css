@@ -1,11 +1,28 @@
 #blog {
-    height: 90vh;
+    min-height: 90vh;
     width: 100vw;
-    display: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#blog img {
+    height: 30vw;
+    margin: 20px 0;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, .4) 7px 10px 10px 5px;
+}
+
+#blog p {
+    /* display: flex; */
+    width: 45vw;
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+}
+
+#blog li {
+    font-size: 22px;
+    filter: blur(3.8px);
 }
