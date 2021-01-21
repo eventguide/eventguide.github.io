@@ -5,17 +5,82 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+}
+
+#blog h3 {
+    font-size: 24px;
+}
+.blogImages {
+    display: grid;
+    grid-template-areas:
+    'k1 k2 k3'
+    'k4 k5 k6';
+    /* width: 80vw; */
+   
+}
+
+#k1 {
+    grid-area: k1;
+}
+
+#k2 {
+    grid-area: k2;
+}
+
+#k3 {
+    grid-area: k3;
+}
+
+#k4 {
+    grid-area: k4;
+}
+
+#k5 {
+    grid-area: k5;
+}
+
+#k6 {
+    grid-area: k6;
 }
 
 #blog img {
-    height: 30vw;
-    margin: 20px 0;
-    border: 1px solid black;
+    height: 30vh;
+    /* width: 25%; */
+    margin: 20px;
+    border: 5px solid #152836;
     box-shadow: rgba(0, 0, 0, .4) 7px 10px 10px 5px;
+    
 }
 
-#blog p {
-    /* display: flex; */
+#blog a {
+    color: blue;
+}
+
+#goToBlog {
+    width: 28vw;
+    /* height: 8vh; */
+    font-size: 44px;
+    padding: .75vw;
+    margin: 0 0 20px 0;
+    border: solid #486491 2px;
+    border-radius: 50px;
+    background: #486491;
+    outline: none;
+    font-weight: bold;
+    color:#ffffff;
+    cursor: pointer;
+    -webkit-transition: 300ms background ease-in-out, 300ms color ease-in-out;
+    -o-transition: 300ms background ease-in-out, 300ms color ease-in-out;
+    transition: 300ms background ease-in-out, 300ms color ease-in-out;
+}
+
+#goToBlog:hover {
+    background: transparent;
+    color: #486491;
+}
+
+/* #blog p {
     width: 45vw;
     font-size: 22px;
     text-align: center;
@@ -25,30 +90,61 @@
 #blog li {
     font-size: 22px;
     filter: blur(3.8px);
-}
+} */
 
 @media screen and (max-width:1024px) {
-    #blog img {
-        height: 50vh;
+    .blogImages {
+        display: grid;
+        grid-template-areas:
+        'k1 k2'
+        'k3 k4'
+        'k5 k6';
     }
 
-    #blog p {
-        width: 60vw;
+    #goToBlog {
+        width: 35vw;
+        font-size: 36px;
     }
+    /* #blog p {
+        width: 60vw;
+    } */
 }
 
 @media screen and (max-width:768px) {
-    #blog p {
-        width: 70vw;
+    #blog img {
+        height: 23vh;
     }
+
+    #goToBlog {
+        width: 45vw;
+        font-size: 34px;
+    }
+    /* #blog p {
+        width: 70vw;
+    } */
 }
 
 @media screen and (max-width:720px) {
+    .blogImages {
+        display: grid;
+        grid-template-areas:
+        'k1'
+        'k2'
+        'k3'
+        'k4'
+        'k5'
+        'k6';
+    }
     #blog img {
         height: 20vh;
     }
 
-    #blog p {
-        width: 90vw;
+    #goToBlog {
+        width: 80vw;
+        font-size: 32px;
     }
+
+    /* #blog p {
+        width: 90vw;
+    } */
 }
